@@ -1,4 +1,8 @@
+'use client';
+
 import Link from 'next/link';
+import Paper from '@mui/material/Paper';
+import { Button, Typography } from '@mui/material';
 
 interface Props {
   href: string;
@@ -8,13 +12,18 @@ interface Props {
 
 const ExtensionItem = ({ href, title, description }: Props) => {
   return (
-    <Link
-      href={href}
-      className="group rounded-xl border border-gray-300 p-4 text-slate-800 transition-all duration-150 hover:bg-slate-800 hover:text-gray-300"
-    >
-      <p className="mb-2 text-xl font-bold">{title}</p>
-      <p className="mb-4">{description}</p>
-      <p className="hover-underline font-semibold">Read More</p>
+    <Link href={href}>
+      <Paper sx={{ px: 3, py: 2 }}>
+        <Typography variant="h5" sx={{ mb: 1, fontWeight: 600 }}>
+          {title}
+        </Typography>
+        <Typography variant="body2" sx={{ mb: 2 }}>
+          {description}
+        </Typography>
+        <Button variant="text" sx={{ pl: 0 }}>
+          Read More
+        </Button>
+      </Paper>
     </Link>
   );
 };
