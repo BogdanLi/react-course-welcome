@@ -5,6 +5,7 @@ import Navbar from '@/components/ui/nav/Navbar';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
 import { ThemeProvider } from '@mui/material';
 import theme from '@/lib/theme';
+import StoreProvider from '@/lib/redux/StoreProvider';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -27,10 +28,12 @@ export default function RootLayout({
       <body className={`${inter.className} min-h-[100vh]`}>
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
-            <main className="flex min-h-screen">
-              <Navbar />
-              {children}
-            </main>
+            <StoreProvider>
+              <main className="flex min-h-screen">
+                <Navbar />
+                {children}
+              </main>
+            </StoreProvider>
           </ThemeProvider>
         </AppRouterCacheProvider>
       </body>
