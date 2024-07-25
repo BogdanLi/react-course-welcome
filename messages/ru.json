@@ -1,0 +1,17 @@
+{
+  "navbar": {
+    "home": "Главная",
+    "extensions": "Расширения",
+    "details": "Подробнее"
+  },
+  "meta": {
+    "home": {
+      "title": "Главная",
+      "description": "Добро пожаловать на курс"
+    },
+    "extensions": {
+      "title": "Расширения",
+      "description": "Все нужные расширения"
+    }
+  }
+}

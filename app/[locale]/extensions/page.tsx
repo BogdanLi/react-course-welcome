@@ -1,11 +1,6 @@
 // import ExtensionItem from '';
 import ExtensionsGrid from '@/components/extensions/ExtensionsGrid';
 import { Container } from '@mui/material';
-import dynamic from 'next/dynamic';
-
-const ExtensionItem = dynamic(
-  () => import('@/components/extensions/ExtensionItem'),
-);
 
 export function generateMetadata() {
   return {

@@ -16,6 +16,7 @@
     "@mui/material-nextjs": "^5.16.4",
     "@reduxjs/toolkit": "^2.2.6",
     "next": "14.2.5",
+    "next-intl": "^3.17.2",
     "prettier-plugin-tailwindcss": "^0.6.5",
     "react": "^18",
     "react-dom": "^18",

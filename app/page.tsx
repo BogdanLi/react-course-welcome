@@ -1,9 +1,5 @@
-const Home = () => {
-  return (
-    <main>
-      <h1>Hello</h1>
-    </main>
-  );
-};
+import { redirect } from 'next/navigation';
 
-export default Home;
+export default function RootPage() {
+  redirect('/ru');
+}

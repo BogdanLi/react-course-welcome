@@ -1,0 +1,17 @@
+{
+  "navbar": {
+    "home": "Home",
+    "extensions": "Extensions",
+    "details": "Details"
+  },
+  "meta": {
+    "home": {
+      "title": "Home",
+      "description": "Welcome to the course"
+    },
+    "extensions": {
+      "title": "Extensions",
+      "description": "Every extension you need"
+    }
+  }
+}

@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Paper from '@mui/material/Paper';
 import { Box, Button, Typography } from '@mui/material';
+import { useTranslations } from 'next-intl';
 
 interface Props {
   link: string;
@@ -11,6 +12,8 @@ interface Props {
 }
 
 const ExtensionItem = ({ link, name, description }: Props) => {
+  const t = useTranslations('navbar');
+
   return (
     <Paper
       sx={{
@@ -36,7 +39,7 @@ const ExtensionItem = ({ link, name, description }: Props) => {
           </Typography>
         </Box>
         <Button variant="text" sx={{ pl: 0 }}>
-          Read More
+          {t('details')}
         </Button>
       </Link>
     </Paper>

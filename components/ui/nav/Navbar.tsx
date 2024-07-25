@@ -6,7 +6,7 @@ import NavLink from './NavLink';
 const links = [
   {
     id: 1,
-    title: 'Главная',
+    title: 'home',
     link: '/',
     icon: (
       <VscCode className="h-6 w-6 transition-all duration-150 group-hover:text-white" />
@@ -14,7 +14,7 @@ const links = [
   },
   {
     id: 2,
-    title: 'Расширения',
+    title: 'extensions',
     link: '/extensions',
     icon: (
       <VscExtensions className="h-6 w-6 transition-all duration-150 group-hover:text-white" />
