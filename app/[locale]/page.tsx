@@ -1,7 +1,9 @@
+import LanguageChoice from '@/components/ui/LanguageChoice';
+
 const Home = () => {
   return (
-    <main>
-      <h1>Hello</h1>
+    <main className="w-full">
+      <LanguageChoice />
     </main>
   );
 };
