@@ -11,15 +11,6 @@ import { NextIntlClientProvider, useMessages } from 'next-intl';
 
 const inter = Inter({ subsets: ['latin'] });
 
-// export const metadata: Metadata = {
-//   title: 'Добро пожаловать на курс',
-//   description: 'Здесь вы узнаете всё, что вам нужно для начала курса',
-//   openGraph: {
-//     title: 'Добро пожаловать на курс',
-//     description: 'Здесь вы узнаете всё, что вам нужно для начала курса',
-//   },
-// };
-
 export async function generateMetadata() {
   const t = await getTranslations('meta');
 
@@ -47,7 +38,7 @@ export default async function RootLayout({
           <ThemeProvider theme={theme}>
             <NextIntlClientProvider messages={messages}>
               <StoreProvider>
-                <main className="flex min-h-screen">
+                <main className="flex min-h-screen flex-row justify-between">
                   <Navbar />
                   {children}
                 </main>

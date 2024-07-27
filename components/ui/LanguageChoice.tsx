@@ -30,7 +30,7 @@ const LanguageChoice = () => {
       sx={{ width: '100%', py: 4, display: 'flex', justifyContent: 'center' }}
     >
       <Box>
-        <Typography variant="h3" sx={{ mb: 4 }}>
+        <Typography variant="h3" sx={{ mb: 4, textAlign: 'center' }}>
           {t('title')}
         </Typography>
         <Box

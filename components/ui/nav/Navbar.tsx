@@ -24,7 +24,7 @@ const links = [
 
 const Navbar = () => {
   return (
-    <div className="float-start flex min-h-full flex-col gap-4 bg-slate-800 p-4">
+    <div className="fixed bottom-0 z-50 flex w-full gap-4 bg-slate-800 p-4 md:relative md:float-start md:min-h-full md:w-auto md:flex-col">
       {links.map((link) => (
         <NavLink key={link.id} {...link}>
           {link.icon}
